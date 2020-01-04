@@ -201,32 +201,32 @@ describe('BinanceRest', () => {
                 expect(err).to.be.null;
                 expect(response).to.deep.equal([
                     {
-                        'symbol': 'ETHBTC',
-                        'bidPrice': '0.04035100',
-                        'bidQty': '0.85800000',
-                        'askPrice': '0.04039500',
-                        'askQty': '1.18800000'
+                        symbol: 'ETHBTC',
+                        bidPrice: '0.04035100',
+                        bidQty: '0.85800000',
+                        askPrice: '0.04039500',
+                        askQty: '1.18800000'
                     },
                     {
-                        'symbol': 'LTCBTC',
-                        'bidPrice': '0.00884200',
-                        'bidQty': '16.66000000',
-                        'askPrice': '0.00887000',
-                        'askQty': '0.58000000'
+                        symbol: 'LTCBTC',
+                        bidPrice: '0.00884200',
+                        bidQty: '16.66000000',
+                        askPrice: '0.00887000',
+                        askQty: '0.58000000'
                     },
                     {
-                        'symbol': 'BNBBTC',
-                        'bidPrice': '0.00021659',
-                        'bidQty': '1698.00000000',
-                        'askPrice': '0.00021660',
-                        'askQty': '828.00000000'
+                        symbol: 'BNBBTC',
+                        bidPrice: '0.00021659',
+                        bidQty: '1698.00000000',
+                        askPrice: '0.00021660',
+                        askQty: '828.00000000'
                     },
                     {
-                        'symbol': 'NEOBTC',
-                        'bidPrice': '0.00363400',
-                        'bidQty': '48.00000000',
-                        'askPrice': '0.00365000',
-                        'askQty': '251.07000000'
+                        symbol: 'NEOBTC',
+                        bidPrice: '0.00363400',
+                        bidQty: '48.00000000',
+                        askPrice: '0.00365000',
+                        askQty: '251.07000000'
                     }
                 ]);
                 done();
@@ -245,52 +245,52 @@ describe('BinanceRest', () => {
                 .then((response) => {
                     expect(response).to.deep.equal([
                         {
-                            'symbol': 'ETHBTC',
-                            'price': '0.04032100'
+                            symbol: 'ETHBTC',
+                            price: '0.04032100'
                         },
                         {
-                            'symbol': 'LTCBTC',
-                            'price': '0.00886500'
+                            symbol: 'LTCBTC',
+                            price: '0.00886500'
                         },
                         {
-                            'symbol': 'BNBBTC',
-                            'price': '0.00021682'
+                            symbol: 'BNBBTC',
+                            price: '0.00021682'
                         },
                         {
-                            'symbol': 'NEOBTC',
-                            'price': '0.00367100'
+                            symbol: 'NEOBTC',
+                            price: '0.00367100'
                         },
                         {
-                            'symbol': '123456',
-                            'price': '0.00030000'
+                            symbol: '123456',
+                            price: '0.00030000'
                         },
                         {
-                            'symbol': 'QTUMETH',
-                            'price': '0.02884900'
+                            symbol: 'QTUMETH',
+                            price: '0.02884900'
                         },
                         {
-                            'symbol': 'EOSETH',
-                            'price': '0.00852300'
+                            symbol: 'EOSETH',
+                            price: '0.00852300'
                         },
                         {
-                            'symbol': 'SNTETH',
-                            'price': '0.00016834'
+                            symbol: 'SNTETH',
+                            price: '0.00016834'
                         },
                         {
-                            'symbol': 'BNTETH',
-                            'price': '0.00565300'
+                            symbol: 'BNTETH',
+                            price: '0.00565300'
                         },
                         {
-                            'symbol': 'BCCBTC',
-                            'price': '0.13200000'
+                            symbol: 'BCCBTC',
+                            price: '0.13200000'
                         },
                         {
-                            'symbol': 'GASBTC',
-                            'price': '0.00187000'
+                            symbol: 'GASBTC',
+                            price: '0.00187000'
                         },
                         {
-                            'symbol': 'BNBETH',
-                            'price': '0.00537000'
+                            symbol: 'BNBETH',
+                            price: '0.00537000'
                         }
                     ]);
                 });
@@ -1045,17 +1045,17 @@ describe('BinanceRest', () => {
             });
             return binance.depositHistory('ETH').then((response) => {
                 expect(response).to.deep.equal({
-                    'depositList': [
+                    depositList: [
                         {
-                            'insertTime': 1508198532000,
-                            'amount': 0.04670582,
-                            'asset': 'ETH',
-                            'address': '0x6915f16f8791d0a1cc2bf47c13a6b2a92000504b',
-                            'txId': '0xdf33b22bdb2b28b1f75ccd201a4a4m6e7g83jy5fc5d5a9d1340961598cfcb0a1',
-                            'status': 1
+                            insertTime: 1508198532000,
+                            amount: 0.04670582,
+                            asset: 'ETH',
+                            address: '0x6915f16f8791d0a1cc2bf47c13a6b2a92000504b',
+                            txId: '0xdf33b22bdb2b28b1f75ccd201a4a4m6e7g83jy5fc5d5a9d1340961598cfcb0a1',
+                            status: 1
                         }
                     ],
-                    'success': true
+                    success: true
                 });
             });
         });
@@ -1072,18 +1072,18 @@ describe('BinanceRest', () => {
             return binance.withdrawHistory('ETH')
                 .then((response) => {
                     expect(response).to.deep.equal({
-                        'withdrawList': [
+                        withdrawList: [
                             {
-                                'id': '7213fea8e94b4a5593d507237e5a555b',
-                                'amount': 1,
-                                'address': '0x6915f16f8791d0a1cc2bf47c13a6b2a92000504b',
-                                'asset': 'ETH',
-                                'txId': '0xdf33b22bdb2b28b1f75ccd201a4a4m6e7g83jy5fc5d5a9d1340961598cfcb0a1',
-                                'applyTime': 1508198532000,
-                                'status': 4
+                                id: '7213fea8e94b4a5593d507237e5a555b',
+                                amount: 1,
+                                address: '0x6915f16f8791d0a1cc2bf47c13a6b2a92000504b',
+                                asset: 'ETH',
+                                txId: '0xdf33b22bdb2b28b1f75ccd201a4a4m6e7g83jy5fc5d5a9d1340961598cfcb0a1',
+                                applyTime: 1508198532000,
+                                status: 4
                             }
                         ],
-                        'success': true
+                        success: true
                     });
                 });
         });
@@ -1100,10 +1100,10 @@ describe('BinanceRest', () => {
             return binance.depositAddress('BNB')
                 .then((response) => {
                     expect(response).to.deep.equal({
-                        'address': '0x6915f16f8791d0a1cc2bf47c13a6b2a92000504b',
-                        'success': true,
-                        'addressTag': '1231212',
-                        'asset': 'BNB'
+                        address: '0x6915f16f8791d0a1cc2bf47c13a6b2a92000504b',
+                        success: true,
+                        addressTag: '1231212',
+                        asset: 'BNB'
                     });
                 });
         });
