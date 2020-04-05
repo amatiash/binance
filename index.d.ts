@@ -83,7 +83,7 @@ declare class BinanceRest {
 
   ticker24hr: (query?: object, callback?: Callback) => Promise<object> | void;
 
-  tickerPrice: (query?: object, callback?: Callback) => Promise<object> | void;
+  tickerPrice: (query?: object | string, callback?: Callback) => Promise<object> | void;
 
   time: (callback?: Callback) => Promise<object> | void;
 
