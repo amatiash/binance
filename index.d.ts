@@ -61,6 +61,10 @@ declare class BinanceRest {
 
   marginTransfer: (query: object | Callback, callback?: Callback) => Promise<object> | void;
 
+  marginOpenOrders: (query?: object | string | Callback, callback?: Callback) => Promise<object> | void;
+
+  marginCancelOrder: (query: object | Callback, callback?: Callback) => Promise<object> | void;
+
   myTrades: (query: object | Callback, callback?: Callback) => Promise<object> | void;
 
   newOrder: (query: object | Callback, callback?: Callback) => Promise<object> | void;
